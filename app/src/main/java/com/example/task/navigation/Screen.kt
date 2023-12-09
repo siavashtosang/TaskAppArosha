@@ -1,4 +1,6 @@
 package com.example.task.navigation
 
-class Screen {
+sealed class Screen(val route: String)  {
+    object MasterScreen: Screen("master_screen")
+    object DetailScreen: Screen("detail_screen")
 }
